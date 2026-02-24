@@ -1,0 +1,31 @@
+{
+    "name": "@inertiaui/modal-vue",
+    "version": "1.0.0-beta-5",
+    "author": "Pascal Baljet <pascal@protone.media>",
+    "private": false,
+    "license": "MIT",
+    "type": "module",
+    "files": [
+        "vue/dist",
+        "vue/src"
+    ],
+    "module": "./vue/dist/inertiaui-modal.js",
+    "main": "./vue/dist/inertiaui-modal.umd.cjs",
+    "exports": {
+        ".": {
+            "import": "./vue/dist/inertiaui-modal.js",
+            "require": "./vue/dist/inertiaui-modal.umd.cjs"
+        }
+    },
+    "scripts": {
+        "prepare": "cd vue && npm install && npm run build"
+    },
+    "peerDependencies": {
+        "@inertiajs/vue3": "^1.3.0||^2.1.11",
+        "axios": "^1.6.0",
+        "vue": "^3.4.x"
+    },
+    "dependencies": {
+        "reka-ui": "^2.3.1"
+    }
+}
