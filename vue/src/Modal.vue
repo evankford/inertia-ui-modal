@@ -52,7 +52,7 @@ onBeforeMount(() => {
         }
     })
 
-        console.log("What's the config", config )
+        console.log("What's the config", modal.value?.config)
 
 
     observer.observe(document.body, { attributes: true, attributeFilter: ['style'] })
