@@ -52,9 +52,6 @@ onBeforeMount(() => {
         }
     })
 
-        console.log("What's the config", modal.value?.config)
-
-
     observer.observe(document.body, { attributes: true, attributeFilter: ['style'] })
 })
 
@@ -122,7 +119,6 @@ onUnmounted(() => {
                         class="im-backdrop fixed inset-0 z-30 bg-black/75"
                     />
 
-                    {{ config }}
                     <!-- The modal/slideover content itself -->
                     <component
                         :is="config?.slideover ? SlideoverContent : ModalContent"

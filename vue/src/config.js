@@ -1,8 +1,9 @@
 const defaultConfig = {
     type: 'modal',
     navigate: false,
-    teleportTo: 'body',
     modal: {
+        teleportTo: 'body',
+
         closeButton: true,
         closeExplicitly: false,
         maxWidth: '2xl',
