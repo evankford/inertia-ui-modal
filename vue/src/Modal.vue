@@ -52,6 +52,9 @@ onBeforeMount(() => {
         }
     })
 
+        console.log("What's the config", config )
+
+
     observer.observe(document.body, { attributes: true, attributeFilter: ['style'] })
 })
 
@@ -61,7 +64,6 @@ onUnmounted(() => {
         observer = null
     }
 
-    console.log(config)
 })
 </script>
 
