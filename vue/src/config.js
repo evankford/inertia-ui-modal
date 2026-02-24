@@ -1,6 +1,7 @@
 const defaultConfig = {
     type: 'modal',
     navigate: false,
+    teleportTo: 'body',
     modal: {
         closeButton: true,
         closeExplicitly: false,
