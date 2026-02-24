@@ -122,6 +122,7 @@ onUnmounted(() => {
                         class="im-backdrop fixed inset-0 z-30 bg-black/75"
                     />
 
+                    {{ config }}
                     <!-- The modal/slideover content itself -->
                     <component
                         :is="config?.slideover ? SlideoverContent : ModalContent"
