@@ -91,6 +91,7 @@ onUnmounted(() => {
             :open="isOpen"
             @update:open="setOpen"
         >
+        {{ config }}
             <DialogPortal :to="config?.teleportTo || 'body'">
                 <div
                     :data-inertiaui-modal-id="id"
