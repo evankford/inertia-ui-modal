@@ -3,7 +3,6 @@ const defaultConfig = {
     navigate: false,
     modal: {
         teleportTo: 'body',
-
         closeButton: true,
         closeExplicitly: false,
         maxWidth: '2xl',

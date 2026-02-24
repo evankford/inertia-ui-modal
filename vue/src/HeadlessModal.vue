@@ -39,6 +39,10 @@ const props = defineProps({
         type: String,
         default: null,
     },
+    teleportTo: {
+        type: String,
+        default: null,
+    }
 })
 
 const modalStack = useModalStack()
@@ -54,6 +58,7 @@ const config = computed(() => {
         paddingClasses: props.paddingClasses ?? getConfigByType(isSlideover, 'paddingClasses'),
         panelClasses: props.panelClasses ?? getConfigByType(isSlideover, 'panelClasses'),
         position: props.position ?? getConfigByType(isSlideover, 'position'),
+        teleportTo: props.teleportTo ?? getConfigByType(isSlideover, 'teleportTo'),
         ...modalContext.value.config,
     }
 })
